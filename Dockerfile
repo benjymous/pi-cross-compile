@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM debian:jessie
 
 MAINTAINER Mitch Allen "docker@mitchallen.com"
 
