@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM debian:stretch
 
 MAINTAINER Mitch Allen "docker@mitchallen.com"
 
