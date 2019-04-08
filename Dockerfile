@@ -6,7 +6,8 @@ MAINTAINER benjymous <benjymous@users.noreply.github.com>
 RUN apt-get update && apt-get install -y git && apt-get install -y build-essential wget rsync cmake
 
 RUN cd /opt \
- && git clone https://github.com/raspberrypi/tools.git --depth=1 rpi
+ && mkdir rpi
+ && git clone https://github.com/raspberrypi/tools.git --depth=1 tools
 
 COPY Toolchain-RaspberryPi.cmake /opt/rpi/
 
