@@ -8,7 +8,7 @@ MAINTAINER benjymous <benjymous@users.noreply.github.com>
 RUN dpkg --add-architecture armhf
 
 # Install build tools and sdl/gl libraries
-RUN apt-get update && apt-get install -y git && apt-get install -y build-essential wget rsync cmake mesa-util:armhf libsdl2-dev:armhf libglew-dev:armhf
+RUN apt-get update && apt-get install -y git && apt-get install -y build-essential wget rsync cmake libgl1-mesa-dev:armhf libsdl2-dev:armhf libglew-dev:armhf
 
 # Get rpi toolchain
 RUN cd /opt \
